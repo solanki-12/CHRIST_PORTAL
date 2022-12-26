@@ -1,0 +1,60 @@
+.container {
+  padding: 16px;
+  min-height: 100px;
+  width: 700px;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+  .form-group
+  {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden; }
+    .form-group:last-child {
+      margin-bottom: 0px;
+
+  }
+
+.form-submit {
+  display: inline-block;
+  background: #6dabe4;
+  color: #fff;
+  border: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+  }
+
+  .form-submit:hover {
+    background: #4292dc; }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden; }
+
+  .form-group:hover
+  {
+  	background: #fff;
+  }
+
+  .form-group:last-child {
+      margin-bottom: 0px; }

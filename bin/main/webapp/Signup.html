@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+	<!-- CSS only -->
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/Signup.css">
+
+
+</head>
+<body onload="hideElements()">
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+            
+            <div class="login" style="font-weight:bold; font-size:15px; text-align:center" onclick="location.href='index.html';">
+					   SIGN IN
+					</div>
+					<div class="Signup" style="font-weight:bold; font-size:15px; text-align:center" >
+					    SIGN UP    
+					</div>
+					
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        
+                        <form method="POST" action="Signup.jsp" class="register-form" name="registerform" id="register-form">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email"  name="email" id="email" placeholder="Your Email" onchange="validateEmail(document.registerform.email)"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="repass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="repass" id="repass" placeholder="Repeat your password"/>
+                            </div><br/>
+                            
+									
+							<div>
+							<label class="switch">
+							<input id="teacher" onclick="teacherCheck()" type="checkbox" name="namevalue" value="teacher"/>
+							<span class="slider round">
+							<span style="font-size:16px;margin-left:28px;">Teacher</span></span>
+							</label> 
+							<label class="switch">
+							<input id="student" onclick="studentCheck()" type="checkbox" name="namevalue" value="student"/>
+							<span class="slider round">
+							<span style="font-size:16px;margin-left:30px;">Student</span>
+							</span>
+							</label>
+							</div>
+							<br>
+							
+							<span id="CourseList">
+								<b style="font-size:16px;">Course : </b>
+								<select  class="custom-select" name="course" id="course" style="width: 27%; margin-left:2px; text-align:center; font-size: 16px;font-family: fangsong;">
+								    <option value="BCA" selected="selected">BCA</option>
+								    <option value="BBA" >BBA</option>
+								    <option value="LLB" >LLB</option>
+								  </select>
+							</span>
+								
+							
+							<span id="SessionList" >
+								<b style="font-size:16px; margin-left:23px;">Year : </b>
+								<select  class="custom-select" name="year" id="year" style="width: 27%; margin-left:2px; text-align:center; font-size: 16px;font-family: fangsong;">
+								    <option value="2020-2023" selected="selected">2020-2023</option>
+								    <option value="2019-2022" >2019-2022</option>
+								    <option value="2018-2021" >2018-2021</option>
+								    <option value="2017-2020" >2017-2020</option>
+								    <option value="2016-2019" >2016-2019</option>
+								  </select>
+							</span>	
+							
+								 								    
+							    <div class="form-group form-button" class="fontregister" >
+                                <input type="submit"  name="signup" id="signup" class="form-submit" value="Register" />
+                          	  </div>
+                        
+						</form>
+						
+                    </div>
+					
+                    <div class="signup-image" >
+					    <figure><img src="signup.JPG" alt="sing up image"></figure>
+                    </div>
+                    
+
+					</div>
+					</div>
+			 </section>
+ </div>        
+    <!-- JS -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <script src="main.js"></script>
+    <!--  <script src="vendor/jquery/jquery.min.js"></script> -->
+    
+    
+    
+</body>
+</html>

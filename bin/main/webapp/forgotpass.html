@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+ <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/forgotpass.css">
+    
+    <!-- FontAwsome  CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+</head>
+<body>
+
+    <div class="main">
+        
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                
+				<div class="signin-content">
+					<div class="signin-image">
+                        <figure><img src="signin-image.jpg" alt="sing in image"></figure>
+                    </div>
+					<!-- action="index.jsp" -->
+                    <div class="signin-form">
+                        <h2 class="form-title">Forgot password</h2>
+                        <div id="signInErrorDiv" style="font-size:16px;color:red;"></div>
+                        <form method="POST" action="index.jsp" class="register-form" id="login-form" name="mySignInForm" onsubmit="checkValidation(event)">
+                            
+                            <div class="form-group" class="new">
+                            	<input type="password" name="newpass" id="newpass" onclick="passWordcheck()" placeholder="New password"/>
+                            </div>
+                            
+                            <div class="form-group" class="renew">
+                                <input type="password" required name="repass" id="repass" onclick="passWordcheck()" placeholder="Re-enter new password" />
+							</div>
+                            
+                           
+                            <div class="form-group form-button">
+                                <input type="submit" name="changepas" id="changepas" onclick="passWordcheck()" class="form-submit" value="Change password"/>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+<script src="main.js"></script>
+
+
+
+</body>
+</html>
